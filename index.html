@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>FastAid</title>
 
@@ -362,7 +362,7 @@ nav button:hover, nav button.active-nav{
   flex-shrink:0;
 }
 
-.home-contact-card h3{ 
+.home-contact-card p{ 
   margin-top:5px; 
   font-size:0.78rem; 
   font-weight:700; 
@@ -878,11 +878,6 @@ footer p{
 
 /* =============================================
    RESPONSIVE BREAKPOINTS
-   1) Desktop / Large screen: 1200px+  (default above)
-   2) Laptop:        1024px – 1199px
-   3) Tablet:        768px  – 1023px
-   4) Large mobile:  480px  – 767px
-   5) Small mobile:  < 480px
    ============================================= */
 
 /* ---- LAPTOP (1024px – 1199px) ---- */
@@ -944,7 +939,6 @@ footer p{
   .section-heading h2{ font-size:2.2rem; }
   #about{ padding:50px 28px 70px; }
 
-  /* Carousel tablet */
   .topic-circle{ width:68px; height:68px; font-size:24px; }
   .topic-label{ font-size:10.5px; max-width:68px; }
 
@@ -959,7 +953,6 @@ footer p{
 
 /* ---- LARGE MOBILE / PHABLET (480px – 767px) ---- */
 @media (max-width:767px) and (min-width:480px){
-  /* Nav: stack logo above buttons on smaller screens */
   nav{
     flex-direction:column;
     padding:10px 12px 10px 12px;
@@ -1007,7 +1000,6 @@ footer p{
   .about-heading{ font-size:1.5rem; }
   .about-heading2{ font-size:1.3rem; }
 
-  /* Carousel */
   .carousel-btn{ width:38px; height:38px; font-size:18px; }
   .topic-circle{ width:62px; height:62px; font-size:22px; }
   .topic-label{ font-size:10px; max-width:62px; }
@@ -1094,7 +1086,6 @@ footer p{
   .about-heading2{ font-size:1.2rem; }
   .about-text{ font-size:0.93rem; }
 
-  /* Carousel small mobile */
   .carousel-btn{ width:34px; height:34px; font-size:16px; }
   .topic-circle{ width:54px; height:54px; font-size:20px; }
   .topic-label{ font-size:9.5px; max-width:54px; }
@@ -1123,7 +1114,7 @@ footer p{
   .faq-question{ padding:16px 18px; font-size:0.9rem; }
   .faq-answer{ font-size:0.88rem; }
 
-  footer h3{ font-size:1rem; }
+  footer h2{ font-size:1rem; }
   footer p{ font-size:0.85rem; }
 }
 
@@ -1176,7 +1167,7 @@ footer p{
 <div class="headers"></div>
 
 <nav>
-  <img src="images/fastaidlogo.jpg" alt="FastAid Logo" class="nav-logo">
+  <img src="images/fastaidlogo.jpg" alt="" class="nav-logo">
   <button class="active-nav" id="nav-home" onclick="openSection('home')">Home</button>
   <button id="nav-about" onclick="openSection('about')">About</button>
   <button id="nav-guide" onclick="openSection('guide')">First Aid Guides</button>
@@ -1186,7 +1177,7 @@ footer p{
 </nav>
 
 <header>
-  <img src="images/Locationpic.jpg" alt="MediCure">
+  <img src="images/Locationpic.jpg" alt="">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">PSAU CAMPUS INFIRMARY GUIDE</div>
@@ -1200,30 +1191,30 @@ footer p{
   <div class="home-contact-strip">
     <div class="home-contact-card">
       <i class="ti ti-phone-call"></i>
-      <div><h3>Contact: 0965-876-8974</h3></div>
+      <p>Contact: 0965-876-8974</p>
     </div>
     <div class="home-contact-card">
       <i class="ti ti-mail"></i>
       <div>
         <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvnJjjpRPkgKhwSRVXrRxsGcKSNsDnhsGgFmBFjhjVKHhGztNJqnsmwlBSnVWDjkCLbdQq">
-          <h3>Email:fastaidsaveslives@gmail.com</h3>
+          <p>Email:fastaidsaveslives@gmail.com</p>
         </a>
       </div>
     </div>
     <div class="home-contact-card">
       <i class="ti ti-brand-facebook"></i>
       <div>
-        <a href="https://www.facebook.com/psau.infirmary"><h3>Facebook: Psau Infirmary</h3></a>
+        <a href="https://www.facebook.com/psau.infirmary"><p>Facebook: Psau Infirmary</p></a>
       </div>
     </div>
   </div>
 
   <div class="home-hero-split">
     <div class="home-hero-image">
-      <img src="images/ambulance1.jpg" alt="PSAU Ambulance">
+      <img src="images/ambulance1.jpg" alt="">
       <div class="hero-overlay2"></div>
       <div class="home-hero-circle">
-        <img src="images/circlelogo.jpg" alt="FastAid Circle">
+        <img src="images/circlelogo.jpg" alt="">
       </div>
     </div>
     <div class="home-hero-text">
@@ -1380,32 +1371,38 @@ footer p{
     <div class="word1"><h2>Health Tips</h2></div><br>
     <div class="grid">
       <div class="card2">
-        <img src="images/stayhydrated.jpg" style="height:150px;width:150px;margin-top:15px;">
+        <!-- FIX 3: Added alt attribute -->
+        <img src="images/stayhydrated.jpg" alt="" style="height:150px;width:150px;margin-top:15px;">
         <br><h3>Stay Hydrated</h3>
         <div class="word2"><p>Drink at least 8 glasses (2 liters) of water daily. Proper hydration supports kidney function, improves energy, and keeps your skin healthy.</p></div>
       </div>
       <div class="card2"><br>
-        <img src="images/exerciseregularly.jpg" style="height:110px;width:100px;">
+        <!-- FIX 4: Added alt attribute -->
+        <img src="images/exerciseregularly.jpg" alt="" style="height:110px;width:100px;">
         <br><br><h3>Exercise Regularly</h3>
         <div class="word2"><p>Aim for at least 30 minutes of moderate physical activity most days. Regular exercise reduces stress and boosts immunity.</p></div>
       </div>
       <div class="card2"><br>
-        <img src="images/getenoughsleep.png" style="height:100px;width:120px;border-radius:10px;">
+        <!-- FIX 5: Added alt attribute -->
+        <img src="images/getenoughsleep.png" alt="" style="height:100px;width:120px;border-radius:10px;">
         <br><br><h3>Get Enough Sleep</h3>
         <div class="word2"><p>Everyone needs at least 7–9 hours of sleep per night. Maintain a consistent sleep schedule, even on weekends.</p></div>
       </div>
       <div class="card2">
-        <img src="images/eatbalanced.png" style="height:130px;width:160px;margin-top:20px;"><br><br>
+        <!-- FIX 6: Added alt attribute -->
+        <img src="images/eatbalanced.png" alt="" style="height:130px;width:160px;margin-top:20px;"><br><br>
         <h3>Eat Balanced Meals</h3>
         <div class="word2"><p>Fill half your plate with vegetables and fruits, a quarter with lean protein, and a quarter with whole grains.</p></div>
       </div>
       <div class="card2">
-        <img src="images/managestress.png" style="height:115px;width:100px;margin-top:27px;"><br>
+        <!-- FIX 7: Added alt attribute -->
+        <img src="images/managestress.png" alt="" style="height:115px;width:100px;margin-top:27px;"><br>
         <br><h3>Manage Stress</h3>
         <div class="word2"><p>Practice mindfulness or take breaks from screens to look after your mental health.</p></div>
       </div>
       <div class="card2">
-        <img src="images/checkups.jpg" style="height:170px;width:140px;margin-top:5px;">
+        <!-- FIX 8: Added alt attribute -->
+        <img src="images/checkups.jpg" alt="" style="height:170px;width:140px;margin-top:5px;">
         <h3>Get Regular Check-ups</h3>
         <div class="word2"><p>Schedule annual check-ups with a doctor for screenings, blood pressure checks, and vaccinations.</p></div>
       </div>
@@ -1439,12 +1436,14 @@ footer p{
 
   <div class="card-container">
     <div class="card4">
-      <img src="images/whitecall.png" style="height:80px;width:110px;margin-top:-20px;">
+      <!-- FIX 9: Added alt attribute -->
+      <img src="images/whitecall.png" alt="" style="height:80px;width:110px;margin-top:-20px;">
       <div class="contact-label2">Emergency Number</div>
       <div class="contact-value2">0965-876-8974</div>
     </div>
     <div class="card5">
-      <img src="images/whiteemail.png" style="height:80px;width:130px;margin-top:-20px;">
+      <!-- FIX 10: Added alt attribute -->
+      <img src="images/whiteemail.png" alt="" style="height:80px;width:130px;margin-top:-20px;">
       <div class="contact-label2">Email Address</div>
       <div class="contact-value2"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvnJjjpRPkgKhwSRVXrRxsGcKSNsDnhsGgFmBFjhjVKHhGztNJqnsmwlBSnVWDjkCLbdQq" style="color:#c40015; text-decoration: none;">fastaidsaveslives@gmail.com</a></div>
     </div>
@@ -1472,13 +1471,15 @@ footer p{
   <br>
 
   <div class="map-full">
-    <img src="images/Map Location.jpg" alt="PSAU Map Location">
+    <!-- FIX 11: Encoded space in filename: Map Location.jpg → Map%20Location.jpg -->
+    <img src="images/Map%20Location.jpg" alt="">
   </div>
 
 </section>
 
+<!-- FIX 12: Changed <h3> to <h2> in footer to avoid skipping heading levels (h1 → h3) -->
 <footer>
-  <h3>FastAid Health &amp; Emergency Guide System</h3>
+  <h2>FastAid Health &amp; Emergency Guide System</h2>
   <p>&copy; 2026 PSAU Campus Health Guide</p>
 </footer>
 
@@ -1506,13 +1507,11 @@ document.querySelectorAll('#topicData [data-topic]').forEach(el=>{
 
 let faOffset=0, faActiveId=faTopics[0]?faTopics[0].id:'';
 
-/* Dynamically compute how many pills fit */
 function getPillWidth(){
   const circle=document.querySelector('.topic-circle');
   if(circle){
     return circle.offsetWidth+14;
   }
-  /* fallback based on viewport */
   if(window.innerWidth<480) return 54+14;
   if(window.innerWidth<768) return 62+14;
   if(window.innerWidth<1024) return 68+14;
@@ -1575,7 +1574,6 @@ function faRenderGuide(){
 faRenderTrack();
 faRenderGuide();
 
-/* Re-render on resize so pill size and visible count stay correct */
 let resizeTimer;
 window.addEventListener('resize',()=>{
   clearTimeout(resizeTimer);
