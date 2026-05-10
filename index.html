@@ -84,7 +84,6 @@ body{
   text-align: left;
 }
 
-/* ===== HOME HERO ===== */
 .home-hero-split{ 
   display:flex; 
   align-items:center; 
@@ -177,7 +176,6 @@ body{
   flex-shrink:0; 
   font-size:1rem; }
 
-/* ===== HEADER / HERO ===== */
 .headers{ 
   height:40px; 
   background-color:#c40015; 
@@ -243,7 +241,6 @@ header img{
   margin-bottom:30px; 
 }
 
-/* ===== NAV ===== */
 nav{ 
   position:sticky; 
   top:0; 
@@ -290,7 +287,6 @@ nav button:hover, nav button.active-nav{
   object-fit:contain;
 }
 
-/* ===== SECTIONS ===== */
 .section{ 
   display:none; 
   max-width:1250px; 
@@ -328,7 +324,6 @@ nav button:hover, nav button.active-nav{
   line-height:1.8; 
 }
 
-/* ===== CONTACT STRIP ===== */
 .home-contact-strip{
   max-width:910px;
   margin:-60px auto 60px; 
@@ -399,7 +394,6 @@ nav button:hover, nav button.active-nav{
   box-shadow:var(--shadow-hover); 
 }
 
-/* ===== HEALTH TIPS SECTION ===== */
 #tips{ 
   padding:0; 
   max-width:100%; 
@@ -494,7 +488,6 @@ nav button:hover, nav button.active-nav{
   margin:0;
 }
 
-/* ===== OTHER CARD STYLES ===== */
 .card1{ 
   background:#c40015; 
   padding:50px 40px; 
@@ -674,7 +667,6 @@ nav button:hover, nav button.active-nav{
 .badge-orange{ background:var(--orange-soft); color:var(--orange); }
 .badge-blue{ background:var(--blue-soft); color:var(--blue); }
 
-/* ===== FOOTER ===== */
 footer{ 
   background:#c40015; 
   color:#fff; 
@@ -688,7 +680,6 @@ footer p{
   margin-top:8px; 
 }
 
-/* ===== CAROUSEL ===== */
 .carousel-row{ 
   position:relative; 
   display:flex; 
@@ -856,7 +847,6 @@ footer p{
 .fa-seek.orange{ border-color:var(--orange); background:var(--orange-soft); color:#7c2d12; }
 .fa-seek.blue{ border-color:var(--blue); background:var(--blue-soft); color:#1e3a8a; }
 
-/* ===== FAQ ===== */
 .faq-container{ 
   max-width:1000px; 
   margin:auto; 
@@ -906,7 +896,6 @@ footer p{
 .faq-item.active .faq-answer{ max-height:300px; padding:0 24px 22px; }
 .faq-item.active .faq-question{ background:#fff5f5; }
 
-/* ===== ABOUT ===== */
 .info-banner{ 
   background:linear-gradient(135deg,#1ca847,#1ca847); 
   color:#fff; 
@@ -965,11 +954,6 @@ footer p{
   margin-bottom: 12px;
 }
 
-/* =============================================
-   RESPONSIVE BREAKPOINTS
-   ============================================= */
-
-/* ---- LAPTOP (1024px – 1199px) ---- */
 @media (max-width:1199px) and (min-width:1024px){
   nav{ padding:10px 16px 10px 120px; gap:4px; }
   nav button{ font-size:0.95rem; padding:9px 13px; }
@@ -984,7 +968,6 @@ footer p{
   .tip-card-desc{ font-size:10.5px; }
 }
 
-/* ---- TABLET (768px – 1023px) ---- */
 @media (max-width:1023px) and (min-width:768px){
   nav{ padding:10px 12px 10px 110px; gap:2px; justify-content:center; }
   nav button{ font-size:0.85rem; padding:8px 10px; }
@@ -1012,7 +995,6 @@ footer p{
   .card4,.card5{ width:220px; min-height:240px; }
   .schedule-columns{ flex-direction:column; gap:0; }
   .day-column{ min-width:100%; }
-  /* tips tablet */
   .tips-outer{ padding:30px 20px 40px; }
   .tips-main-title{ font-size:1.6rem; margin-bottom:20px; }
   .tips-grid-wrap{ max-width:500px; gap:10px; height: 475px; margin-right: 180px;}
@@ -1021,7 +1003,6 @@ footer p{
   .tip-card-desc{ font-size:10px; }
 }
 
-/* ---- LARGE MOBILE / PHABLET (480px – 767px) ---- */
 @media (max-width:767px) and (min-width:480px){
   nav{ flex-direction:column; padding:10px 12px 10px 12px; gap:6px; }
   .nav-logo{ position:relative; left:auto; top:auto; transform:none; height:40px; margin-bottom:4px; }
@@ -1059,7 +1040,6 @@ footer p{
   .fa-box-label{ font-size:1.1rem; }
   .fa-step p{ font-size:1.1rem; }
   .fa-card-title{ font-size:1.4rem; }
-  /* tips phablet */
   .tips-outer{ padding:24px 16px 32px; }
   .tips-main-title{ font-size:1.4rem; margin-bottom:16px;}
   .tips-grid-wrap{ max-width:420px; gap:10px; }
@@ -1069,7 +1049,6 @@ footer p{
   .tip-card-desc{ font-size:10px; }
 }
 
-/* ---- SMALL MOBILE (< 480px) ---- */
 @media (max-width:479px){
   .card-container{ display:flex; justify-content:center; gap:40px; margin-bottom:30px; flex-wrap:wrap; width:230px; margin-left:85px; }
   nav{ flex-direction:column; padding:8px 10px; gap:5px; }
@@ -1121,7 +1100,6 @@ footer p{
   .faq-answer{ font-size:0.88rem; }
   footer h2{ font-size:1rem; }
   footer p{ font-size:0.85rem; }
-  /* tips small mobile — 2 columns */
   .tips-outer{ padding:20px 12px 28px; }
   .tips-main-title{ font-size:1.2rem; margin-bottom:14px; }
   .tips-grid-wrap{ grid-template-columns:repeat(2,1fr); max-width:100%; gap:8px; height:520px; margin-left:0px;}
@@ -1360,7 +1338,6 @@ footer p{
 
 </section>
 
-<!-- ===== HEALTH TIPS SECTION (NEW) ===== -->
 <section id="tips">
   <div class="tips-outer">
     <p class="tips-main-title">Health Tips</p>
@@ -1496,7 +1473,6 @@ function openSection(id){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-/* ===== CAROUSEL ===== */
 const faTopics=[];
 document.querySelectorAll('#topicData [data-topic]').forEach(el=>{
   faTopics.push({
@@ -1587,7 +1563,6 @@ window.addEventListener('resize',()=>{
   },120);
 });
 
-/* ===== FAQ ===== */
 document.querySelectorAll('.faq-question').forEach(button=>{
   button.addEventListener('click',()=>{
     const faqItem=button.parentElement;
